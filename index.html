@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Random Quote Generator</h2>
+        <div id="quote-box">
+            <p id="quote-text">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. </p>
+            <p id="quote-author">- Author</p>
+        </div>
+        <button class="quote-button" id="new-quote-button">New Quote</button>
+        <!-- <i class="material-icons">content_copy</i> -->
+        <div>
+            <button id="copy-button"><i class="fas fa-copy"></i></button>
+            <button id="tweet-button"><i class="fab fa-twitter"></i></button>
+            <button id="speech-button"><i class="fas fa-volume-up"></i></button>
+            <!-- <button class="material-icons"  id="copy-button" >&#xe14d;</button> -->
+
+            <div id="copy-notification" class="notification">Quote copied to clipboard!</div>
+        </div>
+            
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

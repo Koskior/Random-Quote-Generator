@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 13%, rgba(225,188,65,1) 100%, rgba(253,187,45,1) 100%); */
+    background: rgb(130,20,159);
+    background: radial-gradient(circle, rgba(130,20,159,1) 0%, rgba(63,94,251,1) 0%);
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(255,255,255,1) 0%);
+
+.quote-button{
+    border-radius: 12px;
+    cursor: pointer;
+    float:right;
+    background-color: #074e99;
+    color: white;
+}
+
+button i {
+    font-size: 18px; /* Icon size */
+}
+
+#copy-button {
+    background-color: #074e99; /* Green */
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+#tweet-button {
+    background-color: #1DA1F2; /* Twitter Blue */
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+#speech-button {
+    background-color: #074e99; /* Orange */
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+#quote-box {
+    margin: 20px 0;
+    font-size: 24px;
+    font-style: italic;
+    /* color: white; */
+}
+
+#quote-author {
+    font-size: 20px;
+    margin-top: 10px;
+    /* color: white; */
+}
+
+/* Notification Styles */
+.notification {
+    display: none; /* Hidden by default */
+    position: absolute; 
+    /* bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); */
+    /* background-color: #4CAF50; Green background */
+    color: black;
+    /* padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px; */
+    /* z-index: 1000; Ensure it appears above other content */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.5s ease-in-out; /* Fade-in/out effect */
+}
+
+.notification.show {
+    display: block;
+    opacity: 1; /* Show notification */
+}
